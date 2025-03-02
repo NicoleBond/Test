@@ -25,6 +25,6 @@ describe('Cart Tests', () => {
 
         // Verify total
         cy.wait(500); // Extra wait
-        cy.get('.total').should('contain', '$116.90');
+        cy.get('strong.total.ng-binding').should('contain', 'Total: 116.9');
     });
 });
